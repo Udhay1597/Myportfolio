@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.left {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.left:hover {
+    border: 0.5px solid whitesmoke;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-bar {
+    display: flex;
+    height: 80px;
+    background-color: darkslategray;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-left: 20px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li:hover {
+    border-bottom: 2px solid whitesmoke;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px 0;
+    align-items: center;
+    font-weight: 700;
+    padding: 0 20px;
+}
+
+.section>div {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+.leftsection {
+    margin: 30px 0;
+    font-size: 2rem;
+}
+
+.rightsection img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+#element {
+    color: chocolate;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (min-width: 768px) {
+    .nav-bar {
+        padding: 0 50px;
+    }
+
+    .section>div {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .section>div {
+        width: 35%;
+    }
+}
+
+.div-icon{
+    display: block;
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+
+.div-icon{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#icon-selector{
+    margin-left: 22px;
+}
+
+.foot-section{
+    font-size: 0.85rem;
+    text-align: center;
+    background-color: darkslategray;
+    padding: 20px;
+}

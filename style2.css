@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(247, 200, 113);
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    font-weight: 800;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    color: black;
+    font-family: "arial";
+    font-size: 3em;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: animtext 4s steps(80, end);
+    transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+@keyframes animtext {
+    from {
+        width: 0;
+        transition: all 2s ease-in-out;
+    }
+}
+
+.main {
+    margin: 25px 40px; 
+    display: flex;
+    height: 500px;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+.right{
+    background-color: wheat;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px; 
+}
+
+.left {
+    background-color: wheat;
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px; 
+}
+
+.image2 {
+    width: 250px; 
+    
+    display: block;
+    border: 7px dotted rgb(236, 216, 216);
+}
+
+.content {
+    width: 100%; 
+    max-width: 400px; 
+}
+
+.content h3 {
+    font-size: 2rem; 
+    font-weight: 800;
+    margin-bottom: 15px; 
+}
+
+.content p {
+    font-size: 1rem; 
+    color: black;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.resume {
+    margin-top: 1rem; 
+}
+
+.resume-btn {
+    padding: 10px;
+    border: none;
+}
+
